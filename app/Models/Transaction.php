@@ -5,10 +5,10 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class transaction extends Model
+class Transaction extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'date','unit_id','account_id','description','amount'
+        'date','unit_id','account_id','payment_id','description','amount'
         ];
 }

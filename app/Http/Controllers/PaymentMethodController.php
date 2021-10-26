@@ -14,9 +14,9 @@ class PaymentMethodController extends Controller
      */
     public function index()
     {
-        $paymentmethods = PaymentMethod::all();
+        $paymentmethod = PaymentMethod::all();
 
-        return view('paymentmethods.index', compact('paymentmethods'));
+        return view('paymentmethod.index', compact('paymentmethod'));
     }
 
     /**
@@ -26,7 +26,7 @@ class PaymentMethodController extends Controller
      */
     public function create()
     {
-        return view('paymentmethods.create');
+        return view('paymentmethod.create');
     }
 
     /**
@@ -43,7 +43,7 @@ class PaymentMethodController extends Controller
 
         PaymentMethod::create($request->all());
 
-        return redirect()->route('paymentmethods.index')->with('success','Payment Method created successfully.');
+        return redirect()->route('paymentmethod.index')->with('success','Payment Method created successfully.');
     }
 
     /**
@@ -54,7 +54,7 @@ class PaymentMethodController extends Controller
      */
     public function show(PaymentMethod $paymentmethod)
     {
-        return view('paymentmethods.show',compact('paymentmethod'));
+        return view('paymentmethod.show',compact('paymentmethod'));
     }
 
     /**
@@ -65,7 +65,7 @@ class PaymentMethodController extends Controller
      */
     public function edit(PaymentMethod $paymentmethod)
     {
-        return view('paymentmethods.edit',compact('paymentmethod'));
+        return view('paymentmethod.edit',compact('paymentmethod'));
     }
 
     /**
@@ -83,7 +83,7 @@ class PaymentMethodController extends Controller
 
         $paymentmethod->update($request->all());
 
-        return redirect()->route('paymentmethods.index')->with('success','PaymentMethod updated successfully');
+        return redirect()->route('paymentmethod.index')->with('success','PaymentMethod updated successfully');
     }
 
     /**
@@ -96,7 +96,7 @@ class PaymentMethodController extends Controller
     {
         $paymentmethod->delete();
 
-        return redirect()->route('paymentmethods.index')
+        return redirect()->route('paymentmethod.index')
             ->with('success','PaymentMethod deleted successfully');
     }
 }

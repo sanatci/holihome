@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\account;
+use App\Models\Account;
 use App\Models\PaymentMethod;
 use App\Models\Unit;
 use App\Models\Transaction;
 use Illuminate\Http\Request;
-use DB;
+use Illuminate\Support\Facades\DB;
 
 class TransactionController extends Controller
 {
