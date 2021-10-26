@@ -7,7 +7,7 @@
             <h2>Add New Payment Method</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('paymentmethods.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('paymentmethod.index') }}"> Back</a>
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@
 </div>
 @endif
 
-<form action="{{ route('paymentmethods.store') }}" method="post">
+<form action="{{ route('paymentmethod.store') }}" method="post">
     @csrf
 
     <div class="row">

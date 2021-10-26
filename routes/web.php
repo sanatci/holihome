@@ -24,7 +24,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::resource('units', UnitController::class);
-Route::resource('paymentmethods', PaymentMethodController::class);
+Route::resource('paymentmethod', PaymentMethodController::class);
 Route::resource('accounts', AccountController::class);
 Route::resource('transactions', TransactionController::class);
 Route::get('/report', [App\Http\Controllers\TransactionController::class,'report'])->name('report');

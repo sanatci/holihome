@@ -7,7 +7,7 @@
             <h2>Edit Payment Method</h2>
         </div>
         <div class="pull-right">
-            <a class="btn btn-primary" href="{{ route('paymentmethods.index') }}"> Back</a>
+            <a class="btn btn-primary" href="{{ route('paymentmethod.index') }}"> Back</a>
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@
 </div>
 @endif
 
-<form action="{{ route('paymentmethods.update',$paymentmethod->id) }}" method="post">
+<form action="{{ route('paymentmethod.update',$paymentmethod->id) }}" method="post">
     @csrf
 
     @method('PUT')

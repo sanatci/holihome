@@ -54,7 +54,7 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="{{ route('units.index') }}">Rental Units</a>
-                                <a class="dropdown-item" href="{{ route('paymentmethods.index') }}">Payment Methods</a>
+                                <a class="dropdown-item" href="{{ route('paymentmethod.index') }}">Payment Methods</a>
                                 <a class="dropdown-item" href="{{ route('accounts.index') }}">Account Codes</a>
                                 <a class="dropdown-item" href="#">Parameters</a>
                             </div>
